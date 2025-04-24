@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Graffiti‑Artists Porträtprojekt</title>
+  <title>Graffiti-Artists Porträtprojekt</title>
   <style>
-    /* Kleiner CSS‑Reset */
+    /* Kleiner CSS-Reset */
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
     body{
       font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
@@ -27,12 +27,34 @@
     nav a{text-decoration:none;color:#333;font-weight:600;transition:color .2s ease}
     nav a:hover,nav a:focus{color:#0066cc}
     /* Inhalt */
-    main{flex:1;padding:2rem 3rem;max-width:70ch}
+    main{flex:1;padding:2rem 3rem;}
+    h1.site-title{
+      font-size:clamp(2.5rem,5vw,3.5rem);
+      text-align:center;
+      margin:0.5rem 0 1.5rem;
+      line-height:1.2;
+    }
+    /* zentriertes Hero-Bild */
+    main>img{
+      display:block;
+      margin:0 auto 0.5rem;
+      max-width:100%;
+      height:auto;
+      border-radius:8px;
+    }
+    /* Bildunterschrift */
+    .image-caption{
+      text-align:center;
+      margin:0 0 2rem;
+      max-width:60ch;
+      margin-left:auto;
+      margin-right:auto;
+      font-size: 1.2rem;
+    }
     section{margin-bottom:4rem}
     section h2{margin-bottom:1rem;font-size:1.75rem;border-bottom:2px solid #e0e0e0;padding-bottom:.5rem}
     section p{margin-bottom:1rem;text-align:justify}
     ul,ol{padding-left:1.25rem;margin-bottom:1rem}
-    img{max-width:100%;height:auto;border-radius:8px}
     /* Responsive */
     @media(max-width:800px){
       body{flex-direction:column}
@@ -54,7 +76,10 @@
   </nav>
 
   <main>
-     <img src="assets/graffiti_man.jpg.webp" alt="Ausstellungsansicht der Galerie">
+    <h1 class="site-title">Graffiti-Artists Porträtprojekt</h1>
+    <img src="assets/graffiti_man.jpg.webp" alt="Ausstellungsansicht der Galerie">
+    <p class="image-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
     <section id="konzept">
       <h2>Das Konzept</h2>
       <p>Unsere Plattform stellt eine offene Bühne für zeitgenössische Kunst dar und verbindet Kreative mit einem weltweiten Publikum. Das Konzept basiert auf Barrierefreiheit, Nachhaltigkeit und digitaler Teilhabe.</p>
@@ -62,7 +87,7 @@
 
     <section id="kuenstler">
       <h2>Künstler:innen</h2>
-      <p>Mehr als 500 registrierte Künstler:innen präsentieren hier ihre Werke – von Malerei über digitale Installationen bis hin zu Performance‑Art.</p>
+      <p>Mehr als 500 registrierte Künstler:innen präsentieren hier ihre Werke – von Malerei über digitale Installationen bis hin zu Performance-Art.</p>
     </section>
 
     <section id="galerie">
